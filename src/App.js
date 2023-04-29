@@ -9,7 +9,8 @@ function App() {
         <h1>Health Hub</h1>
         <p>
           
-        HealthHub is an all women student-led initiative aiming to establish a novel online platform that serves the pre-health community. Through this platform, students and professionals can seek and post about professional development opportunities. The main objectives of this initiative are: <br/>
+        HealthHub is an all women student-led initiative aiming to establish a novel online platform that serves the pre-health community. Through this platform, students and professionals can seek and post about professional development opportunities. <br/>
+        The main objectives of this initiative are: <br/>
         Bridge the gap between students and professionals <br/>
         Promote enriching opportunities for post-graduate studies to students <br/>
         Create easier access to research and clinical opportunities. <br/>
