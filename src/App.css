@@ -1,6 +1,9 @@
 .App {
   text-align: center;
 }
+html{
+  background-color: #dbe5cb;
+}
 
 .App-logo {
   height: 40vmin;
@@ -39,4 +42,13 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.navigation-menu {
+  margin-left: auto;
+}
+
+.navigation-menu li {
+  list-style-type: none;
+  margin: 0 1rem;
 }
