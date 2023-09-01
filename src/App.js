@@ -10,7 +10,6 @@ import ClinicalExperience from './pages/Profile/ClinicalExperience';
 import StudentOrganisations from './pages/Profile/StudentOrgs';
 import Athletics from './pages/Profile/Athletics';
 import SpecialInterest from './pages/Profile/SpecialInterest';
-import StudentOrganisations from './pages/Profile/StudentOrgs';
 
 function App() {
   return (
@@ -27,7 +26,6 @@ function App() {
           <Route path='/StudentOrganisations' element={<StudentOrganisations/>}/>
           <Route path='/Athletics' element={<Athletics/>}/>
           <Route path='/SpecialInterest' element={<SpecialInterest/>}/>
-          <Route path='/StudentOrgs' element={<StudentOrganisations/>}/>
 
           
         </Routes>

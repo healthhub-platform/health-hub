@@ -39,3 +39,8 @@
     padding-left:0px;
     padding-right: 25px;
 }
+
+.container .content h3{
+    
+    font-size: large;
+}
