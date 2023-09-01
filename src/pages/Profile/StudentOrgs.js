@@ -17,6 +17,21 @@ const StudentOrganisations = () => {
 
             <div className="content"> 
             
+            <h3>
+                Student Organization Name
+                <h4>
+                    Role/Involvement in Organization
+                </h4>
+                <p>
+                    <ul>
+                        <li>
+                            description about what you have done in the organization 
+                        </li>
+                    </ul>
+                </p>
+            </h3>
+
+            
             </div>
         </div>
     );
