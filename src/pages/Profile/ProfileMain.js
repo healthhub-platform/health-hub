@@ -1,5 +1,14 @@
 import React from 'react';
 import './ProfileMain.css';
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import ProfileNavbar from './ProfileNavBar';
+import AcademicCourses from './AcademicCourses';
+import ResearchExperience from './ResearchExperience';
+import ClinicalExperience from './ClinicalExperience';
+import StudentOrganisations from './StudentOrgs';
+import Athletics from './Athletics';
+import SpecialInterest from './SpecialInterest';
+import Data from '../../mock-data.json';
 const ProfileMain = () => {
     return (
         <div className='container'>
@@ -16,6 +25,20 @@ const ProfileMain = () => {
             </ul>
 
             <div className="content"> 
+
+                
+                <ProfileNavbar/>
+                <Routes>
+                {/*<Route path='/Profiles' element={<ProfileMain/>}/>*/}
+                <Route path='/AcademicCourses' element={<AcademicCourses/>}/>
+                <Route path='/ResearchExperience' element={<ResearchExperience/>}/>
+                <Route path='/ClinicalExperience' element={<ClinicalExperience/>}/>
+                <Route path='/StudentOrganisations' element={<StudentOrganisations/>}/>
+                <Route path='/Athletics' element={<Athletics/>}/>
+                <Route path='/SpecialInterest' element={<SpecialInterest/>}/>
+
+                
+                </Routes>
             
             </div>
         </div>

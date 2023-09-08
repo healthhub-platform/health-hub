@@ -10,26 +10,11 @@ const Navbar= () => {
                     <NavLink to="/">Homepage</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/Profiles">Profiles</NavLink>
+                    <NavLink to="/Profiles"><div className='searchbar'>
+                    <input placeholder="Search for Profiles"/>
+                </div></NavLink>
                 </li>
-                <li>
-                    <NavLink to="/AcademicCourses">Academic Courses</NavLink>
-                </li>
-                <li>
-                    <NavLink to="/ResearchExperience">Research Experience</NavLink>
-                </li>
-                <li>
-                    <NavLink to="/ClinicalExperience">Clinical Experience</NavLink>
-                </li>
-                <li>
-                    <NavLink to="/StudentOrganisations">Student Organisations</NavLink>
-                </li>
-                <li>
-                    <NavLink to="/Athletics">Athletics</NavLink>
-                </li>
-                <li>
-                    <NavLink to="/SpecialInterest">Special Interest</NavLink>
-                </li>
+               
             </ul>
         </div>
     );

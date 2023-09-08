@@ -20,13 +20,6 @@ function App() {
         <Routes>
           <Route path='/' element={<Homepage/>}/> 
           <Route path='/Profiles' element={<ProfileMain/>}/>
-          <Route path='/AcademicCourses' element={<AcademicCourses/>}/>
-          <Route path='/ResearchExperience' element={<ResearchExperience/>}/>
-          <Route path='/ClinicalExperience' element={<ClinicalExperience/>}/>
-          <Route path='/StudentOrganisations' element={<StudentOrganisations/>}/>
-          <Route path='/Athletics' element={<Athletics/>}/>
-          <Route path='/SpecialInterest' element={<SpecialInterest/>}/>
-
           
         </Routes>
       </Router>
