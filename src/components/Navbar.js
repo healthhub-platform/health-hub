@@ -2,7 +2,8 @@ import React from 'react';
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
 
-const Navbar= () => {
+function Navbar() {
+    const[query, setQuery]=useState("")
     return (
         <div className="navigation">
             <ul>
@@ -11,7 +12,7 @@ const Navbar= () => {
                 </li>
                 <li>
                     <NavLink to="/Profiles"><div className='searchbar'>
-                    <input placeholder="Search for Profiles"/>
+                    <input placeholder="Search for Profiles" onChange={event => setQuery(event.target.value)}/>
                 </div></NavLink>
                 </li>
                
