@@ -11,10 +11,14 @@ function Navbar() {
                     <NavLink to="/">Homepage</NavLink>
                 </li>
                 <li>
+                    <NavLink to="/Pathways">Pathways</NavLink>
+                </li>
+                <li>
                     <NavLink to="/Profiles"><div className='searchbar'>
                     <input placeholder="Search for Profiles" onChange={event => setQuery(event.target.value)}/>
                 </div></NavLink>
                 </li>
+                
                
             </ul>
         </div>
