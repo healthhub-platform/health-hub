@@ -9,10 +9,17 @@ import StudentOrganisations from './StudentOrgs';
 import Athletics from './Athletics';
 import SpecialInterest from './SpecialInterest';
 import Data from '../../mock-data.json';
-const ProfileMain = () => {
+const ProfileMain = ({ match }) => {
+    /*const { username } = match.params;*/
     return (
         <div className='container'>
             <h3>Profile Section</h3>
+            <h4>
+                Bio
+            </h4>
+            <p>
+                This is a bio about the user
+            </p>
 
             <ul className = "sidebar">
                 <li> <span> Jane Doe </span></li>
@@ -39,6 +46,8 @@ const ProfileMain = () => {
 
                 
                 </Routes>
+
+
             
             </div>
         </div>
