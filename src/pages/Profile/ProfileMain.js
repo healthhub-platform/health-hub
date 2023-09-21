@@ -1,6 +1,7 @@
 import React from 'react';
 import './ProfileMain.css';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { useHistory } from 'react-router-dom';
 import ProfileNavbar from './ProfileNavBar';
 import AcademicCourses from './AcademicCourses';
 import ResearchExperience from './ResearchExperience';
@@ -35,8 +36,8 @@ const ProfileMain = ({ match }) => {
 
                 
                 <ProfileNavbar/>
-                <Routes>
-                {/*<Route path='/Profiles' element={<ProfileMain/>}/>*/}
+                 <Routes>
+                <Route path='/Profiles' element={<ProfileMain/>}/>
                 <Route path='/AcademicCourses' element={<AcademicCourses/>}/>
                 <Route path='/ResearchExperience' element={<ResearchExperience/>}/>
                 <Route path='/ClinicalExperience' element={<ClinicalExperience/>}/>
@@ -45,7 +46,7 @@ const ProfileMain = ({ match }) => {
                 <Route path='/SpecialInterest' element={<SpecialInterest/>}/>
 
                 
-                </Routes>
+                </Routes> 
 
 
             

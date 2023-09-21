@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import {Link} from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 import { BrowserRouter as Router, Route, Switch, Routes } from 'react-router-dom';
 import ProfileMain from "./ProfileMain";
 
@@ -9,6 +9,7 @@ import SearchBar from "../../components/SearchBar";
 
 
 function ProfileSearchSection() {
+    const history = useNavigate();
   const [searchResults, setSearchResults] = useState([]);
   const allProfiles = [
     { id: 1, username: 'user1', fullName: 'John Doe' },
