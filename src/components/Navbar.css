@@ -31,3 +31,23 @@
 .navigation a:hover {
     color: #007BFF; /* Change color on hover */
 }
+.loginicon {
+    position: absolute;
+    width: 80px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    color: black;
+    height: 40px;
+    left: 85%;
+    top: 10px;
+    background:#2bc6ff;
+    border-radius: 24px;
+    cursor: pointer;
+  }
+  
+  .loginicon:hover{
+    color: white;
+  }

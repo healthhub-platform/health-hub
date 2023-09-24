@@ -2,10 +2,14 @@ import React from 'react';
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
 
-const Navbar=() =>{
+const Navbar=({ handleLoginClick }) =>{
+    const handleClick = () => {
+        handleLoginClick();
+      };
     
     return (
         <div className="navigation">
+            
             <ul>
                 <li>
                     <NavLink to="/">Homepage</NavLink>
@@ -20,9 +24,14 @@ const Navbar=() =>{
                 <li>
                     <NavLink to="/ProfileSearch"> Profile Search</NavLink>
                 </li>
-                
+                <li>
+                    <span onClick={handleClick} className="loginicon">
+                        Sign In
+                    </span>
+                </li>
                
             </ul>
+            
         </div>
     );
 }
