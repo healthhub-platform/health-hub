@@ -10,6 +10,12 @@ import ProfileMain from './pages/Profile/ProfileMain';
 import Pathways from './pages/Pathways/Pathways';
 import ProfileSearchSection from './pages/Profile/SearchProfiles';
 import LoginForm from './components/LoginForm';
+import AcademicCourses from './pages/Profile/AcademicCourses';
+import ResearchExperience from './pages/Profile/ResearchExperience';
+import ClinicalExperience from './pages/Profile/ClinicalExperience';
+import StudentOrganisations from './pages/Profile/StudentOrgs';
+import Athletics from './pages/Profile/Athletics';
+import SpecialInterest from './pages/Profile/SpecialInterest';
 
 
 function App() {
@@ -29,7 +35,14 @@ function App() {
         
         <Routes>
           <Route path='/' element={<Homepage/>}/> 
-          <Route path='/Profiles' element={<ProfileMain/>}/>
+          <Route path='/Profiles' element={<ProfileMain/>}>
+            <Route path='AcademicCourses' element={<AcademicCourses/>}/>
+            <Route path='ResearchExperience' element={<ResearchExperience/>}/>
+            <Route path='ClinicalExperience' element={<ClinicalExperience/>}/>
+            <Route path='StudentOrganisations' element={<StudentOrganisations/>}/>
+            <Route path='Athletics' element={<Athletics/>}/>
+            <Route path='SpecialInterest' element={<SpecialInterest/>}/>
+          </Route>
           <Route path='/Pathways' element={<Pathways/>}/>
           <Route path='/ProfileSearch' element={<ProfileSearchSection/>}/>
         </Routes>

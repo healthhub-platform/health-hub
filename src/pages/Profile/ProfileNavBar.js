@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import "./ProfileNavBar.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import { useHistory } from 'react-router-dom';
 const ProfileNavbar= () => {
     const [isDropdownOpen, setDropdownOpen] = useState(false);
@@ -21,30 +21,31 @@ const ProfileNavbar= () => {
                         <button onClick={toggleDropdown}>Academic Courses</button>
                         {isDropdownOpen && (
                         <div className="dropdown-content">
-                            <NavLink to="/AcademicCourses">Academic Institute 1</NavLink>
-                            <NavLink to="/AcademicCourses">Academic Institute 2</NavLink>
-                            <NavLink to="/AcademicCourses">Academic Institute 3</NavLink>
+                            <NavLink to="/Profiles/AcademicCourses">Academic Institute 1</NavLink>
+                            <NavLink to="/Profiles/AcademicCourses">Academic Institute 2</NavLink>
+                            <NavLink to="/Profiles/AcademicCourses">Academic Institute 3</NavLink>
                         </div>
                         )}
                     </div>
                 </li>
                 <li>
-                    <NavLink to="/ResearchExperience">Research Experience</NavLink>
+                    <NavLink to="/Profiles/ResearchExperience">Research Experience</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/ClinicalExperience">Clinical Experience</NavLink>
+                    <NavLink to="/Profiles/ClinicalExperience">Clinical Experience</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/StudentOrganisations">Student Organisations</NavLink>
+                    <NavLink to="/Profiles/StudentOrganisations">Student Organisations</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/Athletics">Athletics</NavLink>
+                    <NavLink to="/Profiles/Athletics">Athletics</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/SpecialInterest">Special Interest</NavLink>
+                    <NavLink to="/Profiles/SpecialInterest">Special Interest</NavLink>
                 </li>
                 
             </ul>
+            <Outlet/>
         </div>
     );
 }
