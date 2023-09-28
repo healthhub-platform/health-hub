@@ -1,11 +1,14 @@
 import React from 'react';
 import "./Navbar.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
-const Navbar=({ handleLoginClick }) =>{
+const Navbar=({ handleLoginClick, handleRegisterClick }) =>{
     const handleClick = () => {
         handleLoginClick();
       };
+    const handleClick2 =()=>{
+        handleRegisterClick();
+    }
     
     return (
         <div className="navigation">
@@ -27,6 +30,11 @@ const Navbar=({ handleLoginClick }) =>{
                 <li>
                     <span onClick={handleClick} className="loginicon">
                         Sign In
+                    </span>
+                </li>
+                <li>
+                    <span onClick={handleClick2} className="registericon">
+                        Register
                     </span>
                 </li>
                

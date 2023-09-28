@@ -1,9 +1,11 @@
 import React from "react";
+import { ProSidebar, Sidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
 import './ProfileSidebar.css'
 
 const ProfileSidebar =()=>{
     return(
         <div className ="container"> 
+        <Sidebar> 
             <ul className = "sidebar">
                 <li> <span> Jane Doe </span></li>
                 <li><span><i className="fa fa-title"></i> </span><span>Title</span> </li>
@@ -13,6 +15,7 @@ const ProfileSidebar =()=>{
                 <li><span><i className="fa fa-interests"></i> </span><span>Interests: </span> </li>
                 <li><span><i className="fa fa-location"></i> </span><span>Willing to Relocate: Y/N </span> </li>
             </ul>
+            </Sidebar>
         </div>
     );
 }

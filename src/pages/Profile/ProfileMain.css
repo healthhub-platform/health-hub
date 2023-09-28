@@ -1,6 +1,7 @@
-/* .container{
+ .container{
     height:100vh; 
     position: relative;
+    margin: 0 auto;
 }
 
 
@@ -14,4 +15,6 @@
 .container .content h3{
     
     font-size: large;
-} */
+} 
+
+ .container .rowC{ flex-direction:row; justify-content: 'flex-start'} 

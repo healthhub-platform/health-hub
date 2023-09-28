@@ -17,19 +17,14 @@ const ProfileMain = ({ match }) => {
         
         <div className='container'>
             <ProfileNavbar/>
+            <div className='rowC'>
+            <ProfileSidebar/>
+           
             
             <h3>Profile Section</h3>
             
 
-            {/* <ul className = "sidebar">
-                <li> <span> Jane Doe </span></li>
-                <li><span><i className="fa fa-title"></i> </span><span>Title</span> </li>
-                <li><span><i className="fa fa-school"></i> </span><span>Education: <br /> High School <br /> College <br /> Certification Programs </span> </li>
-                <li><span><i className="fa fa-qualifications"></i> </span><span>Qualifications: <br /> Certificate 1 <br /> Certificate 2 <br /> Certificate 3 </span> </li>
-                <li><span><i className="fa fa-SeekingPositions"></i> </span><span>Seeking Opportunities In: <br/> list fields </span> </li>
-                <li><span><i className="fa fa-interests"></i> </span><span>Interests: </span> </li>
-                <li><span><i className="fa fa-location"></i> </span><span>Willing to Relocate: Y/N </span> </li>
-            </ul> */}
+            
             
             <div className="content"> 
             <h4>
@@ -41,21 +36,10 @@ const ProfileMain = ({ match }) => {
 
                 
                 
-                 {/* <Routes>
-                <Route path='/Profiles' element={<ProfileMain/>}>
-                    <Route path='AcademicCourses' element={<AcademicCourses/>}/>
-                    <Route path='ResearchExperience' element={<ResearchExperience/>}/>
-                    <Route path='ClinicalExperience' element={<ClinicalExperience/>}/>
-                    <Route path='StudentOrganisations' element={<StudentOrganisations/>}/>
-                    <Route path='Athletics' element={<Athletics/>}/>
-                    <Route path='SpecialInterest' element={<SpecialInterest/>}/>
-                </Route>
-
-                
-                </Routes>  */}
-
-            </div>
-            <ProfileSidebar/>
+               
+                </div>
+                </div>
+            
         </div>
     );
 }

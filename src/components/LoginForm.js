@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import './LoginForm.css' 
 const LoginForm = ({ isShowLogin }) => {
   return (
@@ -16,6 +17,8 @@ const LoginForm = ({ isShowLogin }) => {
             <input type="password" name="password" className="login-box" />
             <br></br>
             <input type="submit" value="LOGIN" className="login-btn" />
+            <br></br>
+            {/* <p>Need to sign up? Click <Link to="/RegisterAccount"> </Link> </p> */}
           </form>
         </div>
       </div>

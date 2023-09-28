@@ -2,7 +2,7 @@ import healthHubLogo from './images/healthhublogo.png';
 import './App.css';
 import React from 'react';
 import { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link, Switch } from "react-router-dom";
 import { Nav, Form, FormControl, Button } from "react-bootstrap";
 import Navbar from './components/Navbar';
 import Homepage from './pages/Homepage/Homepage';
@@ -16,22 +16,28 @@ import ClinicalExperience from './pages/Profile/ClinicalExperience';
 import StudentOrganisations from './pages/Profile/StudentOrgs';
 import Athletics from './pages/Profile/Athletics';
 import SpecialInterest from './pages/Profile/SpecialInterest';
+import RegistrationForm from './components/registrationForm';
+
 
 
 function App() {
   
   const [isShowLogin, setIsShowLogin] = useState(true);
+  const [isShowRegister, setIsShowRegister] = useState(true);
 
   const handleLoginClick = () => {
     setIsShowLogin((isShowLogin) => !isShowLogin);
   };
+  const handleRegisterClick = () =>{
+    setIsShowRegister((isShowRegister)=>!isShowRegister);
+  }
   
   return (
     <div className="App">
-          
+        
         <div className="navigation-menu"> 
         <Router>
-        <Navbar handleLoginClick={handleLoginClick}/>
+        <Navbar handleLoginClick={handleLoginClick} handleRegisterClick={handleRegisterClick}/>
         
         <Routes>
           <Route path='/' element={<Homepage/>}/> 
@@ -47,7 +53,9 @@ function App() {
           <Route path='/ProfileSearch' element={<ProfileSearchSection/>}/>
         </Routes>
         </Router>
+        <RegistrationForm isShowRegister={isShowRegister}/>
         <LoginForm isShowLogin={isShowLogin} />
+
       </div>
       </div>
       

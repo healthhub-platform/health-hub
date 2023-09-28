@@ -51,3 +51,24 @@
   .loginicon:hover{
     color: white;
   }
+
+  .registericon {
+    position: absolute;
+    width: 80px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    color: black;
+    height: 40px;
+    left: 78%;
+    top: 10px;
+    background:#2bc6ff;
+    border-radius: 24px;
+    cursor: pointer;
+  }
+  
+  .registericon:hover{
+    color: white;
+  }
