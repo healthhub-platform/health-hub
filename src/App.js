@@ -16,6 +16,7 @@ import StudentOrganisations from './pages/Profile/StudentOrgs';
 import Athletics from './pages/Profile/Athletics';
 import SpecialInterest from './pages/Profile/SpecialInterest';
 import { Login } from './pages/Login/login';
+import { EditProfile } from './pages/Profile/editProfile/editProfile';
 
 
 
@@ -43,6 +44,7 @@ function App() {
           <Route path='/Pathways' element={<Pathways/>}/>
           <Route path='/ProfileSearch' element={<ProfileSearchSection/>}/>
           <Route path='/Login' element={<Login/>}/>
+          <Route path='/EditProfile' element={<EditProfile/>}/>
         </Routes>
         </Router>
       

@@ -1,0 +1,29 @@
+.editProfileArea {
+    justify-content: center;
+    display: flex;
+    align-content: center;
+}
+form {
+    margin-top: 50px;
+    padding: 30px 20px;
+    width: 320px;
+    border-radius: 7px;
+    background-color: white;
+    backdrop-filter: blur(5px);
+    background-color: rgba(107, 92, 177, 0.588);
+    overflow: hidden;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  input,
+  textarea {
+    padding: 8px 10px;
+    margin: 3px 8px 16px 8px;
+    background-color: rgba(222, 239, 248, 0.877);
+    border: 0px transparent;
+    border-radius: 5px;
+    color: rgb(7, 7, 7);
+    font-size: 16px;
+    z-index: 1;
+  }
