@@ -3,12 +3,7 @@ import "./Navbar.css";
 import { NavLink, Link } from "react-router-dom";
 
 const Navbar=({ handleLoginClick, handleRegisterClick }) =>{
-    const handleClick = () => {
-        handleLoginClick();
-      };
-    const handleClick2 =()=>{
-        handleRegisterClick();
-    }
+    
     
     return (
         <div className="navigation">
@@ -27,15 +22,11 @@ const Navbar=({ handleLoginClick, handleRegisterClick }) =>{
                 <li>
                     <NavLink to="/ProfileSearch"> Profile Search</NavLink>
                 </li>
+                
                 <li>
-                    <span onClick={handleClick} className="loginicon">
-                        Sign In
-                    </span>
-                </li>
-                <li>
-                    <span onClick={handleClick2} className="registericon">
-                        Register
-                    </span>
+                    <div className="loginicon"> 
+                    <NavLink to="/Login">Login</NavLink>
+                    </div>
                 </li>
                
             </ul>

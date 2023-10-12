@@ -1,5 +1,6 @@
 import React from 'react';
-// import './ProfileMain.css';
+import { useOutletContext } from 'react-router-dom';
+ import './ProfileMain.css';
 const AcademicCourses = () => {
     return (
         <div className='container'>

@@ -1,6 +1,6 @@
 import React from 'react';
 import './ProfileMain.css';
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link, Outlet } from "react-router-dom";
 import { useHistory } from 'react-router-dom';
 import ProfileNavbar from './ProfileNavBar';
 import AcademicCourses from './AcademicCourses';
@@ -39,7 +39,7 @@ const ProfileMain = ({ match }) => {
                
                 </div>
                 </div>
-            
+            <Outlet/>
         </div>
     );
 }
