@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { getFirestore, getDocs, collection, where, query } from "firebase/firestore"; 
+import { initializeApp } from "firebase/app";
 
 function SearchBar({ onSearch }) {
   const [query, setQuery] = useState('');

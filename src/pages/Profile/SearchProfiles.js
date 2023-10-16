@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Route, Switch, Routes } from 'react-router-dom
 import ProfileMain from "./ProfileMain";
 
 import SearchBar from "../../components/SearchBar";
+import { getAuth } from "firebase/auth";
+
 
 // ProfileSearchSection.js
 
