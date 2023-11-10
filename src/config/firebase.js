@@ -9,19 +9,15 @@ import { getFirestore } from "firebase/firestore";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyC11YHzC-eZ9tFn2SR9RkUj9fRJSzIbdLI",
-  authDomain: "health-hub-bu.firebaseapp.com",
-  projectId: "health-hub-bu",
-  storageBucket: "health-hub-bu.appspot.com",
-  messagingSenderId: "732609084345",
-  appId: "1:732609084345:web:5cf50b2cfc7da662bf1468",
-  measurementId: "G-LCKNS4SDDC"
+  apiKey: "AIzaSyBChIe5t897fFpCSADGSlfkI4HCE4t_M1c",
+  authDomain: "healthhubbu.firebaseapp.com",
+  projectId: "healthhubbu",
+  storageBucket: "healthhubbu.appspot.com",
+  messagingSenderId: "1083326321122",
+  appId: "1:1083326321122:web:794713f0a1672d4158e9bb",
+  measurementId: "G-7CJH313CX8"
 };
 
 // Initialize Firebase
-export const app = initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
-
-export const auth = getAuth(app);
-export const provider = new GoogleAuthProvider();
-export const db = getFirestore(app);
